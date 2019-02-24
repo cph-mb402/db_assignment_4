@@ -13,4 +13,4 @@ I did not recreate the users since that operation was successfull the first time
 The easiest way to find the objects of interest is to look for GRANT and INSERT keywords in the file. Since I have used the Mysql Workbench client the log file is a bit cluttered with all other operations used as well (like selects).
 
 ## Dump Strategy
-The dump strategy was a simple use of mysqldump with it user. Normally a cron job would be used to periodically, usually once a day, make a backup of the database, and the backups for at least the last 2 weeks or last month would be kept on the server, plus a copy of the backup on another device.
+The dump strategy was a simple use of mysqldump with the IT user. Normally a cron job would be used to periodically, usually once a day, make a backup of the database, and the backups for at least the last 2 weeks or last month would be kept on the server, plus a copy of the backup on another device.
