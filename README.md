@@ -2,6 +2,16 @@
 
 I did not manage to run the mysql as a container with docker, so I have just used a normal mysql-server installation on my machine running Ubuntu 18.04 locally.
 
+## Permissions
+Inventory should get all priviledges on products and productlines as to be able to select, insert, update and delete products and produclines as needed.
+
+Bookkeeping should be able to select, update and delete existing orders and their details, and confirm the status of the payments from the customers by being able to select them.
+
+HR gets all priviledges on the offices and employees table, to be able to select, insert, update and delete all data related to employees.
+
+Sales get select and insert privileges on the orders and order details tables. In case something goes wrong, bookkeeping will be able to take care of it.
+
+IT gets all privileges on all tables, so as to be able to manage the whole system.
 
 ## Logging
 The log file also shows my first attempt at granting priviledges, which failed since I had the wrong syntax.
